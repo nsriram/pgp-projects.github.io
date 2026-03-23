@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PGP Data Science & AI — Project Portfolio</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    header p  { font-size: 1.05rem; opacity: 0.88; max-width: 640px; margin: 0 auto; }
+
+    main {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .module-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.6rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1.1rem;
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1.1rem;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+    .num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--border);
+      line-height: 1;
+      padding-top: 0.15rem;
+      text-align: right;
+    }
+
+    .content h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      color: var(--text);
+    }
+    .content h2 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .content h2 a:hover { color: var(--accent); text-decoration: underline; }
+
+    .desc { font-size: 0.92rem; color: var(--muted); margin-bottom: 0.55rem; }
+
+    .outcome {
+      font-size: 0.88rem;
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      padding: 0.4rem 0.75rem;
+      border-radius: 0 5px 5px 0;
+      color: var(--text);
+    }
+    .outcome strong { color: var(--accent); }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PGP Data Science &amp; AI — Project Portfolio</h1>
+  <p>End-to-end projects spanning Python, Machine Learning, Deep Learning, NLP, Computer Vision, MLOps, and Generative AI.</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <div class="num">01</div>
+    <div class="content">
+      <div class="module-label">Intro to Python</div>
+      <h2><a href="01_Intro_To_Python_FoodHub_Project_Notebook.html">FoodHub Order Data Analysis</a></h2>
+      <p class="desc">Exploratory data analysis on a food aggregator platform to understand demand patterns, restaurant performance, and customer behaviour across cuisines and time-of-week.</p>
+      <div class="outcome"><strong>Outcome:</strong> Top 5 restaurants account for 35% of revenue; American cuisine leads preference; weekends drive significantly higher order volumes; 59% of customers are repeat users.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">02</div>
+    <div class="content">
+      <div class="module-label">Machine Learning</div>
+      <h2><a href="02_Machine_Learning_AllLife_Bank_Personal_Loan_Campaign_Project_Notebook.html">AllLife Bank — Personal Loan Campaign</a></h2>
+      <p class="desc">Identifies retail banking customers most likely to accept a personal loan offer using decision-tree classifiers with class-balancing techniques on an imbalanced dataset.</p>
+      <div class="outcome"><strong>Outcome:</strong> Post-pruned decision tree achieves 99.7% recall on training data; class-weight balancing and pre-pruning compared to find the optimal trade-off between precision and recall.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">03</div>
+    <div class="content">
+      <div class="module-label">Advanced Machine Learning</div>
+      <h2><a href="03_Adv_Machine_Learning_EasyVisa_Project_Notebook.html">EasyVisa — Visa Approval Prediction</a></h2>
+      <p class="desc">Predicts employment-based visa certification outcomes for OFLC using ensemble methods (Random Forest, XGBoost, Bagging) to help shortlist high-probability candidates.</p>
+      <div class="outcome"><strong>Outcome:</strong> Tuned XGBoost selected as best model; job experience, high-school education level, and Asian origin are the strongest predictors of visa certification.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">04</div>
+    <div class="content">
+      <div class="module-label">Neural Networks</div>
+      <h2><a href="04_Neural_Neworks_ReneWind_Project_Notebook.html">ReneWind — Wind Turbine Failure Prediction</a></h2>
+      <p class="desc">Uses neural networks with regularisation techniques to predict generator failures in wind turbines from sensor data, enabling cost-effective predictive maintenance.</p>
+      <div class="outcome"><strong>Outcome:</strong> Dropout-regularised model achieves 0.92 validation recall with only 19 false negatives; batch normalisation + dropout reduces false positives from ~100 to 20, dramatically cutting unnecessary inspections.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">05</div>
+    <div class="content">
+      <div class="module-label">NLP with Generative AI</div>
+      <h2><a href="05_NLP_With_GenAI_Merck_Manuals_Project_Notebook.html">Merck Manuals — Medical Q&amp;A with RAG</a></h2>
+      <p class="desc">Builds and evaluates three medical Q&amp;A approaches — baseline LLM, prompt engineering, and Retrieval-Augmented Generation — on content from the Merck Manuals to ensure accurate, grounded answers.</p>
+      <div class="outcome"><strong>Outcome:</strong> RAG with fine-tuned prompting raises groundedness from 3/5 to 4/5; all test queries achieve high relevance; RAG outperforms the baseline LLM significantly across evaluation metrics.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">06</div>
+    <div class="content">
+      <div class="module-label">Intro to Computer Vision</div>
+      <h2><a href="06_Intro_To_Computer_Vision_SafeGuard_Project_Notebook.html">SafeGuard — Workplace Helmet Compliance Detection</a></h2>
+      <p class="desc">Develops image-classification models to automatically detect whether workers are wearing helmets, comparing a custom CNN architecture against transfer learning with VGG-16.</p>
+      <div class="outcome"><strong>Outcome:</strong> VGG-16 with a feed-forward head reaches 98.9% validation accuracy vs. 92.6% for the custom CNN — a 6.3 percentage-point gain that translates directly to fewer undetected safety violations.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">07</div>
+    <div class="content">
+      <div class="module-label">Model Deployment</div>
+      <h2><a href="07_Model_Deployment_SuperKart_Project_Notebook.html">SuperKart — Sales Revenue Predictor</a></h2>
+      <p class="desc">Builds and deploys a production-grade product sales forecasting system for a retail chain, integrating trained regression models with a Streamlit front-end in a containerised deployment pipeline.</p>
+      <div class="outcome"><strong>Outcome:</strong> End-to-end deployment achieved — model predicts revenue across stores, store types, and cities; fully functional Streamlit app containerised and ready for production serving.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">08</div>
+    <div class="content">
+      <div class="module-label">Intro to SQL</div>
+      <h2><a href="08_Intro_to_SQL_New_Wheels_Project_Notebook.pdf">New Wheels — Vehicle Sales SQL Analysis</a></h2>
+      <p class="desc">Uses SQL queries to analyse vehicle sales, order trends, customer satisfaction, and revenue performance for an online vehicle subscription business.</p>
+      <div class="outcome"><strong>Outcome:</strong> SQL-based reporting pipeline delivers quarterly business insights on revenue, top-selling vehicles, and customer satisfaction scores to guide management decision-making.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">09</div>
+    <div class="content">
+      <div class="module-label">Applied Statistics</div>
+      <h2><a href="09_Applied_Statistics_ENews_Project_Notebook.html">ENews — Landing Page A/B Test</a></h2>
+      <p class="desc">Applies hypothesis testing (t-test, z-test, chi-square, ANOVA) to compare old and new landing pages for a digital news platform, measuring engagement time and subscription conversion.</p>
+      <div class="outcome"><strong>Outcome:</strong> New page shows significantly higher time-on-page and conversion rate (p &lt; 0.05); language preference does not drive conversion — validating the new design for a full rollout.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">10</div>
+    <div class="content">
+      <div class="module-label">Advanced ML &amp; MLOps</div>
+      <h2><a href="10_AdvML_MLOps_Tourism_Package_Prediction_Project_Notebook.html">Visit With Us — Tourism Package Prediction with MLOps</a></h2>
+      <p class="desc">Predicts customer likelihood of purchasing a Wellness Tourism Package while building a complete MLOps pipeline with GitHub Actions CI/CD for automated model training, versioning, and deployment.</p>
+      <div class="outcome"><strong>Outcome:</strong> Full MLOps pipeline operational — data registration, preparation, training, and Hugging Face deployment stages automated end-to-end with continuous model update workflows.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">11</div>
+    <div class="content">
+      <div class="module-label">Advanced GenAI for NLP</div>
+      <h2><a href="11_Adv_GenAI_For_NLP_NewsFindr_Project_Notebook.html">NewsFindr — Agentic Personalised News Retrieval</a></h2>
+      <p class="desc">Builds a multi-tool AI agent combining SQL queries, web search APIs, and an LLM to deliver real-time personalised news with multi-stage credibility and relevance filtering.</p>
+      <div class="outcome"><strong>Outcome:</strong> All four objectives met — real-time retrieval, credibility validation, engagement enhancement, and streamlined consumption; sequential tool execution prevents race conditions; all test cases validated.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num">12</div>
+    <div class="content">
+      <div class="module-label">Capstone</div>
+      <h2><a href="12_Capstone_Project_Food_Delivery_Chatbot_FinalReport.html">FoodHub AI — Customer Service Chatbot (Capstone)</a></h2>
+      <p class="desc">Designs and deploys a production AI chatbot integrating an LLM, a SQL database agent, and multi-layer guardrails to handle customer order queries autonomously and escalate edge cases to human agents.</p>
+      <div class="outcome"><strong>Outcome:</strong> Refined prompting improves accuracy by 90% (2.22 → 4.22 / 5) and clarity by 60% (2.78 → 4.44 / 5); SQL agent achieves exact matches across all 10 order columns; 7/7 test queries answered correctly; deployed to Hugging Face with CI/CD.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  PGP in Data Science &amp; AI &mdash; Great Learning &bull; 2025&ndash;2026
+</footer>
+
+</body>
+</html>
