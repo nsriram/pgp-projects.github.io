@@ -95,6 +95,29 @@
     }
     .outcome strong { color: var(--accent); }
 
+    .links {
+      margin-top: 0.55rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .links a {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.18rem 0.55rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: var(--bg);
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); }
+    .links a.hf  { border-color: #fbbf24; color: #92400e; background: #fffbeb; }
+    .links a.hf:hover { border-color: #f59e0b; color: #78350f; }
+    .links a.gh  { border-color: #94a3b8; color: #334155; background: #f1f5f9; }
+    .links a.gh:hover { border-color: #475569; color: #0f172a; }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -181,6 +204,10 @@
       <h2><a href="07_Model_Deployment_SuperKart_Project_Notebook.html">SuperKart — Sales Revenue Predictor</a></h2>
       <p class="desc">Builds and deploys a production-grade product sales forecasting system for a retail chain, integrating trained regression models with a Streamlit front-end in a containerised deployment pipeline.</p>
       <div class="outcome"><strong>Outcome:</strong> End-to-end deployment achieved — model predicts revenue across stores, store types, and cities; fully functional Streamlit app containerised and ready for production serving.</div>
+      <div class="links">
+        <a class="hf" href="https://huggingface.co/spaces/nsriram78/SuperKartRevenuePredictionFrontend" target="_blank" rel="noopener">🤗 HF Space — Frontend</a>
+        <a class="hf" href="https://huggingface.co/spaces/nsriram78/SuperKartRevenuePredictionBackend" target="_blank" rel="noopener">🤗 HF Space — Backend API</a>
+      </div>
     </div>
   </div>
 
@@ -211,6 +238,12 @@
       <h2><a href="10_AdvML_MLOps_Tourism_Package_Prediction_Project_Notebook.html">Visit With Us — Tourism Package Prediction with MLOps</a></h2>
       <p class="desc">Predicts customer likelihood of purchasing a Wellness Tourism Package while building a complete MLOps pipeline with GitHub Actions CI/CD for automated model training, versioning, and deployment.</p>
       <div class="outcome"><strong>Outcome:</strong> Full MLOps pipeline operational — data registration, preparation, training, and Hugging Face deployment stages automated end-to-end with continuous model update workflows.</div>
+      <div class="links">
+        <a class="hf" href="https://huggingface.co/spaces/nsriram78/tourism-package-prediction" target="_blank" rel="noopener">🤗 HF Space</a>
+        <a class="hf" href="https://huggingface.co/nsriram78/tourism-package-prediction" target="_blank" rel="noopener">🤗 HF Model</a>
+        <a class="hf" href="https://huggingface.co/datasets/nsriram78/tourism-package-prediction" target="_blank" rel="noopener">🤗 HF Dataset</a>
+        <a class="gh" href="https://github.com/nsriram/tourism_project/" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
     </div>
   </div>
 
@@ -231,6 +264,10 @@
       <h2><a href="12_Capstone_Project_Food_Delivery_Chatbot_FinalReport.html">FoodHub AI — Customer Service Chatbot (Capstone)</a></h2>
       <p class="desc">Designs and deploys a production AI chatbot integrating an LLM, a SQL database agent, and multi-layer guardrails to handle customer order queries autonomously and escalate edge cases to human agents.</p>
       <div class="outcome"><strong>Outcome:</strong> Refined prompting improves accuracy by 90% (2.22 → 4.22 / 5) and clarity by 60% (2.78 → 4.44 / 5); SQL agent achieves exact matches across all 10 order columns; 7/7 test queries answered correctly; deployed to Hugging Face with CI/CD.</div>
+      <div class="links">
+        <a class="hf" href="https://huggingface.co/spaces/nsriram78/FoodHubChatbot" target="_blank" rel="noopener">🤗 HF Space</a>
+        <a class="gh" href="https://github.com/nsriram/foodhub_project/" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
     </div>
   </div>
 
